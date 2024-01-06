@@ -1,6 +1,6 @@
 RegisterNetEvent('merc_tp:ir', function(targetId)
     local playerId  = source
-    local playerPed = GrtPlayerPed(playerId)
+    local playerPed = GetPlayerPed(playerId)
     local targetPed = GetPlayerPed(targetId)
 
     if targetPed <= 0 then
